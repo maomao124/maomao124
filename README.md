@@ -4,7 +4,9 @@
 
 ## 学习笔记
 
-* **MongoDB**                                 2022/11/14 -                       [点击进入](https://github.com/maomao124/MongoDB_study_notes)
+* **LoadRunner学习笔记**             2022/11/24 - 2022/11/26   [点击进入](https://github.com/maomao124/LoadRunner_study_notes)
+* **Xenu_Link_Sleuth学习笔记**   2022/11/24 - 2022/11/24   [点击进入](https://github.com/maomao124/Xenu_Link_Sleuth_study_notes)
+* **MongoDB学习笔记**                  2022/11/14 - 2022/11/27   [点击进入](https://github.com/maomao124/MongoDB_study_notes)
 * **通用权限系统实战学习笔记**     2022/10/26 - 2022/11/14   [点击进入](https://github.com/maomao124/authority_study_notes)
 * **j2cache学习笔记**                      2022/11/05 - 2022/11/06   [点击进入](https://github.com/maomao124/j2cache_study_notes)
 * **jwt学习笔记**                              2022/11/02 - 2022/11/03  [点击进入](https://github.com/maomao124/jwt_study_notes)
