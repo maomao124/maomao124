@@ -56,7 +56,7 @@
 * 项目名称：authority
 * 技术：SpringBoot、Zuul、Nacos、Fegin、Ribbon、Hystrix、JWT Token、Mybatis Plus、AntiSamy、j2cache、dozer等
 * 项目地址：[点击进入](https://github.com/maomao124/authority)
-* 代码行数：28700行左右
+* 代码行数：28900行左右
 * 项目介绍：对于企业中的项目绝大多数都需要进行用户权限管理、认证、鉴权、加密、解密、XSS防跨站攻击等。这些功能整体实现思路基本一致，但是大部分项目都需要实现一次，这无形中就形成了巨大的资源浪费。本项目就是针对这个问题，提供了一套通用的权限解决方案。项目具备通用的用户管理、资源权限管理、网关统一鉴权、XSS防跨站攻击等多个模块，支持多业务系统并行开发，支持多服务并行开发，可以作为后端服务的开发脚手架去使用。
 
 
@@ -76,6 +76,7 @@ authority                    #聚合工程，用于聚合parent、apps、tools�
 	├── tools-core		     # 核心组件：基础实体、返回对象、上下文、异常处理、分布式锁、函数、树
 	├── tools-databases	     # 数据源组件：数据源配置、数据权限、查询条件等
 	├── tools-dozer		     # 对象转换：dozer配置、工具
+	├── tools-redis-cache    # redis分布式缓存工具类和分布式锁服务，缓存工具类解决著名的3个缓存问题
 	├── tools-j2cache	     # 缓存组件：j2cache、redis缓存
 	├── tools-jwt            # JWT组件：配置、属性、工具
 	├── tools-log	         # 日志组件：日志实体、事件、拦截器、工具
@@ -105,7 +106,7 @@ authority                    #聚合工程，用于聚合parent、apps、tools�
 * 项目名称：CartoonApp
 * 技术：Android
 * 项目地址：[点击进入](https://github.com/maomao124/CartoonApp)
-* 代码行数：9400行左右
+* 代码行数：11500行左右
 * 项目介绍：一款基于安卓的观看漫画的app，实现了漫画排行榜、漫画目录、收藏夹、历史记录、漫画搜索、漫画更新推送服务等
 
 
