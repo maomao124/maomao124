@@ -4,6 +4,8 @@
 
 ## 学习笔记
 
+* **集信达短信平台学习笔记**         2022/12/14 - 2023/01/05  [点击进入](https://github.com/maomao124/sms_study_notes)
+
 * **RocketMQ学习笔记**                2022/11/29 - 2022/12/12  [点击进入](https://github.com/maomao124/RocketMQ_study_notes)
 * **LoadRunner学习笔记**             2022/11/24 - 2022/11/26   [点击进入](https://github.com/maomao124/LoadRunner_study_notes)
 * **Xenu_Link_Sleuth学习笔记**   2022/11/24 - 2022/11/24   [点击进入](https://github.com/maomao124/Xenu_Link_Sleuth_study_notes)
@@ -47,6 +49,69 @@
 ## 项目
 
 **小项目非常多，只列举一部分代码行数在5000行以上的项目**
+
+
+
+<br>
+
+
+
+#### 集信达短信平台
+
+* 时间：2022/12/14 - 2023/01/05
+* 项目名称：sms-backend
+* 技术：SpringBoot、Nacos、Mybatis Plus、redis、Redission分布式锁等
+* 项目地址：[点击进入](https://github.com/maomao124/sms-backend)
+* 代码行数：55000行左右
+* 项目介绍：一个统一入口、减少对接成本、同时兼顾多种短信业务、简单易行的操作与维护、高稳定、高可靠的短信平台。通过智能动态的通道评级、选举、降级、热插拔，增强了系统的健壮性，摆脱对单一通道的依赖。并且提供多种对接方式的短信发送和管理平台
+
+
+
+项目模块：
+
+```sh
+sms-backend                      # 聚合工程，用于聚合parent、apps、tools等模块
+  ├── parent				     # 父工程，nacos配置及依赖包管理
+  ├── apps					     # 应用目录
+  	   ├── auth				     # 权限服务父工程
+  		   ├── auth-entity       # 权限实体
+  		   ├── auth-server       # 权限服务
+  	   ├── gateway			     # 网关服务
+  	   ├── sms            	     # 短信平台父工程
+  	        ├──sms-entity		 # 短信平台实体
+  	        ├──sms-dao           # 短信平台的数据持久化模块，主要包括mybatis plus的mapper文件和mapper接口
+  	        ├──sms-manage		 # 系统管理服务
+  	        ├──sms-api			 # 短信接收服务，应用系统调用接口、发送短信
+  	        ├──sms-server		 # 短信发送服务，调用短信通道、发送短信
+  	        └──sms-sdk			 # 短信SDK，应用系统引入、发送短信
+  └── tools				         # 工具工程
+  	   ├── tools-common		     # 基础组件：基础配置类、函数、常量、统一异常处理、undertow服务器
+  	   ├── tools-core		     # 核心组件：基础实体、返回对象、上下文、异常处理、分布式锁、函数、树
+  	   ├── tools-databases	     # 数据源组件：数据源配置、数据权限、查询条件等
+  	   ├── tools-dozer		     # 对象转换：dozer配置、工具
+  	   ├── tools-redis-cache    # redis分布式缓存工具类和分布式锁服务，缓存工具类解决著名的3个缓存问题
+  	   ├── tools-j2cache	     # 缓存组件：j2cache、redis缓存
+  	   ├── tools-jwt             # JWT组件：配置、属性、工具
+  	   ├── tools-log	         # 日志组件：日志实体、事件、拦截器、工具
+  	   ├── tools-swagger2	     # 文档组件：knife4j文档
+  	   ├── tools-user            # 用户上下文：用户注解、模型和工具，当前登录用户信息注入模块
+   	   ├── tools-validator	     # 表单验证： 后台表单规则验证
+  	   ├── tools-xss		     # xss防注入组件
+```
+
+
+
+
+
+
+
+
+
+<br>
+
+<br>
+
+<br>
 
 
 
