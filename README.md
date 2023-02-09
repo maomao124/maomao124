@@ -1,9 +1,19 @@
-每天一点代码，纪录自己成长
+**每天一点代码，纪录自己成长**
+
+<br>
+
+QQ：1296193245
+
+目前大四，正在找工作
+
+
 
 <br>
 
 ## 学习笔记
 
+* **聚合支付项目实战学习笔记**      2023/01/09 - 2023/02/09 [点击进入](https://github.com/maomao124/aggregate_pay_study_notes)
+* **FreeMarker学习笔记**              2023/01/29 - 2023/01/29 [点击进入](https://github.com/maomao124/FreeMarker_study_notes)
 * **集信达短信平台学习笔记**         2022/12/14 - 2023/01/05  [点击进入](https://github.com/maomao124/sms_study_notes)
 * **RocketMQ学习笔记**                2022/11/29 - 2022/12/12  [点击进入](https://github.com/maomao124/RocketMQ_study_notes)
 * **LoadRunner学习笔记**             2022/11/24 - 2022/11/26   [点击进入](https://github.com/maomao124/LoadRunner_study_notes)
@@ -18,7 +28,7 @@
 * **dozer学习笔记**                         2022/10/28 - 2022/10/29   [点击进入](https://github.com/maomao124/dozer_study_notes)
 * **swagger学习笔记**                    2022/10/26 - 2022/10/27   [点击进入](https://github.com/maomao124/swagger_study_notes)
 * **lombok学习笔记**                      2022/10/26 - 2022/10/26   [点击进入](https://github.com/maomao124/lombok_study_notes)
-* **面试学习笔记**                             2022/10/16 -                       [点击进入](https://github.com/maomao124/interview_study_notes)
+* **面试学习笔记**                             2022/10/16 -  永远              [点击进入](https://github.com/maomao124/interview_study_notes)
 * **Android学习笔记**                     2022/09/17 - 2022/10/14    [点击进入](https://github.com/maomao124/Android_study_notes)
 * **java并发编程学习笔记**            2022/08/26 - 2022/09/16   [点击进入](https://github.com/maomao124/java_concurrent_programming_study_notes)
 * **java设计模式学习笔记**            2022/08/09 - 2022/08/25   [点击进入](https://github.com/maomao124/java_design_patterns_study_notes)
@@ -51,13 +61,98 @@
 
 
 
+
+
 <br>
+
+
+
+#### 毕业设计 聚合支付
+
+* 时间：2023/01/06 - 2023/02/09   或者   2022/10/25 - 2023/02/09 
+* 项目名称：aggregate-pay
+* 技术：SpringBoot、Zuul、Nacos、Fegin、Ribbon、Hystrix、JWT Token、Mybatis Plus、AntiSamy、dozer、redis分布式缓存、RocketMQ、FreeMacker、Oauth2.0、knife4j swagger等
+* 项目地址：[点击进入](https://github.com/maomao124/aggregate-pay)
+* 代码行数：116400行左右（java文件）
+* 项目介绍： 聚合支付顾名思义就是将目前主流的支付进行整合，形成第三方支付的聚合通道。聚合支付是一个提供聚合支付的平台，聚合支付目前主要的做法就是线上聚合收银台(开放API)，线下C2B一码多付、线下B2C商家扫码。平台应以SaaS服务形式提供给各商户订单管理、门店管理、财务数据统计等基础服务，聚合支付还以支付为入口，通过广告、营销、金融等服务，构建一个移动支付的全生态系统。 聚合支付不进行资金清算，因此无需支付牌照，其只是完成支付环节的信息流转和商户运营的承载，其在集合银联、支付宝、微信等主流支付方式的基础上，帮助商户降低接入成本，提高运营效率，具有中立性、灵活性、便捷性等特点
+
+
+
+项目模块：
+
+```sh
+aggregate-pay                    # 聚合工程，用于聚合parent、apps、tools等模块
+  ├── parent				     # 父工程，nacos配置及依赖包管理
+  ├── apps					     # 应用目录
+  	   ├── auth				     # 权限服务父工程
+  		   ├── auth-entity       # 权限实体
+  		   ├── auth-server       # 权限服务
+  	   ├── gateway			     # 网关服务
+  	   ├── pay                   # 整个聚合支付系统的父模块
+  		   ├── aggregate-pay-common                # 聚合支付系统的公共模块，主要存放一些工具类
+  		   ├── aggregate-pay-entity                # 聚合支付系统实体类模块，存放实体类
+  		   ├── aggregate-pay-gateway               # 聚合支付系统SaaS系统的网关
+  		   ├── aggregate-pay-log                   # 日志模块，用于异步接收其它服务产生的操作日志和接收登录日志，提供分页查询日志的功能
+  		   ├── aggregate-pay-merchant              # 商户服务父模块
+  		        ├── aggregate-pay-merchant-api     # 商户服务API模块，用于存放商户服务的DTO类、feign接口、服务降级FallbackFactory
+  		        ├── aggregate-pay-merchant-service # 商户服务
+  		   ├── aggregate-pay-merchant-application  # 商户平台应用服务
+           ├── aggregate-pay-payment-agent         # 支付聚道代理服务父模块
+                ├── aggregate-pay-payment-agent-api      # 支付聚道代理服务API模块，用途和商户服务API模块一样
+                ├── aggregate-pay-payment-agent-service  # 支付聚道代理服务，主要用于对接第三方支付平台
+           ├── aggregate-pay-sms                   # 聚合支付短信服务，给聚合支付平台提供发送短信和校验短信功能，和短信系统对接
+           ├── aggregate-pay-transaction           # 聚合支付系统交易服务父模块
+                ├── aggregate-pay-transaction-api  # 交易服务API模块，用于存放商户服务的DTO类、feign接口、服务降级FallbackFactory
+                ├── aggregate-pay-transaction-service    # 交易服务，交易相关
+  		   ├── aggregate-pay-uaa                   # 聚合支付系统SaaS系统的认证和授权服务的父模块
+  		        ├── aggregate-pay-uaa-api          # 认证和授权服务API模块，用途和商户服务API模块一样
+  		        ├── aggregate-pay-uaa-service      # 聚合支付系统SaaS系统的认证和授权服务
+  		   ├── aggregate-pay-user                  # 聚合支付系统用户服务父模块
+  		        ├── aggregate-pay-user-api         # 聚合支付系统用户服务API模块
+  		        ├── aggregate-pay-user-service     # 聚合支付系统用户服务
+  	   ├── sms            	     # 短信平台父工程
+  	        ├──sms-entity		 # 短信平台实体
+  	        ├──sms-dao           # 短信平台的数据持久化模块，主要包括mybatis plus的mapper文件和mapper接口
+  	        ├──sms-manage		 # 系统管理服务
+  	        ├──sms-api			 # 短信接收服务，应用系统调用接口、发送短信
+  	        ├──sms-server		 # 短信发送服务，调用短信通道、发送短信
+  	        └──sms-sdk			 # 短信SDK，应用系统引入、发送短信
+  └── tools				         # 工具工程
+  	   ├── tools-common		     # 基础组件：基础配置类、函数、常量、统一异常处理、undertow服务器
+  	   ├── tools-core		     # 核心组件：基础实体、返回对象、上下文、异常处理、分布式锁、函数、树
+  	   ├── tools-databases	     # 数据源组件：数据源配置、数据权限、查询条件等
+  	   ├── tools-dozer		     # 对象转换：dozer配置、工具
+  	   ├── tools-redis-cache    # redis分布式缓存工具类和分布式锁服务，缓存工具类解决著名的3个缓存问题
+  	   ├── tools-j2cache	     # 缓存组件：j2cache、redis缓存
+  	   ├── tools-jwt             # JWT组件：配置、属性、工具
+  	   ├── tools-log	         # 日志组件：日志实体、事件、拦截器、工具
+  	   ├── tools-swagger2	     # 文档组件：knife4j文档
+  	   ├── tools-user            # 用户上下文：用户注解、模型和工具，当前登录用户信息注入模块
+   	   ├── tools-validator	     # 表单验证： 后台表单规则验证
+  	   ├── tools-xss		     # xss防注入组件
+```
+
+
+
+
+
+
+
+
+
+<br>
+
+<br>
+
+<br>
+
+
 
 
 
 #### 集信达短信平台
 
-* 时间：2022/12/14 - 2023/01/05
+* 时间：2022/12/14 - 2023/01/05  或者  2022/10/25 - 2023/01/05
 * 项目名称：sms-backend
 * 技术：SpringBoot、Nacos、Mybatis Plus、redis、Redission分布式锁等
 * 项目地址：[点击进入](https://github.com/maomao124/sms-backend)
