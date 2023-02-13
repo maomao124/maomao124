@@ -3,7 +3,6 @@
 <br>
 
 QQ：1296193245
-
 目前大四，正在找工作
 
 
@@ -71,7 +70,7 @@ QQ：1296193245
 
 * 时间：2023/01/06 - 2023/02/09   或者   2022/10/25 - 2023/02/09 
 * 项目名称：aggregate-pay
-* 技术：SpringBoot、Zuul、Nacos、Fegin、Ribbon、Hystrix、JWT Token、Mybatis Plus、AntiSamy、dozer、redis分布式缓存、RocketMQ、FreeMacker、Oauth2.0、knife4j swagger等
+* 技术：SpringBoot、Zuul、Nacos、Feign、Ribbon、Hystrix、JWT Token、Mybatis Plus、AntiSamy、dozer、redis分布式缓存、RocketMQ、FreeMacker、Oauth2.0、knife4j swagger等
 * 项目地址：[点击进入](https://github.com/maomao124/aggregate-pay)
 * 代码行数：116400行左右（java文件）
 * 项目介绍： 聚合支付顾名思义就是将目前主流的支付进行整合，形成第三方支付的聚合通道。聚合支付是一个提供聚合支付的平台，聚合支付目前主要的做法就是线上聚合收银台(开放API)，线下C2B一码多付、线下B2C商家扫码。平台应以SaaS服务形式提供给各商户订单管理、门店管理、财务数据统计等基础服务，聚合支付还以支付为入口，通过广告、营销、金融等服务，构建一个移动支付的全生态系统。 聚合支付不进行资金清算，因此无需支付牌照，其只是完成支付环节的信息流转和商户运营的承载，其在集合银联、支付宝、微信等主流支付方式的基础上，帮助商户降低接入成本，提高运营效率，具有中立性、灵活性、便捷性等特点
@@ -213,7 +212,7 @@ sms-backend                      # 聚合工程，用于聚合parent、apps、to
 
 * 时间：2022/10/25 - 2022/11/14
 * 项目名称：authority
-* 技术：SpringBoot、Zuul、Nacos、Fegin、Ribbon、Hystrix、JWT Token、Mybatis Plus、AntiSamy、j2cache、dozer等
+* 技术：SpringBoot、Zuul、Nacos、Feign、Ribbon、Hystrix、JWT Token、Mybatis Plus、AntiSamy、j2cache、dozer等
 * 项目地址：[点击进入](https://github.com/maomao124/authority)
 * 代码行数：28900行左右
 * 项目介绍：对于企业中的项目绝大多数都需要进行用户权限管理、认证、鉴权、加密、解密、XSS防跨站攻击等。这些功能整体实现思路基本一致，但是大部分项目都需要实现一次，这无形中就形成了巨大的资源浪费。本项目就是针对这个问题，提供了一套通用的权限解决方案。项目具备通用的用户管理、资源权限管理、网关统一鉴权、XSS防跨站攻击等多个模块，支持多业务系统并行开发，支持多服务并行开发，可以作为后端服务的开发脚手架去使用。
