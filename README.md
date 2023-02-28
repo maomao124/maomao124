@@ -54,6 +54,46 @@ QQ：1296193245
 
 
 
+## 技能
+
+* 熟悉java基础知识，对集合类有一定的研究，熟悉HashMap、ArrayList的实现原理，对java的IO模型等有一定的了解
+* 熟悉spring、springMVC、Mybatis、MyBatis Plus等主流框架的使用
+* 熟悉spring框架的使用，对AOP、循环依赖spring事务失效场景等有一定了解，曾经写过一个简易的spring框架
+* 熟悉Spring Boot框架的使用，熟悉Spring Boot Starter的开发流程
+* 熟悉关系型数据库MySQL，对事务、索引、SQL性能分析、索引失效情况、SQL优化、锁等有一定的了解，会使用mycat中间件做分库分表
+* 熟悉常用的java设计模式，对6种设计原则和23种设计模式有一定的了解
+* 掌握并发编程的相关知识，熟悉管程、多线程、synchronized原理、volatile原理、CAS、原子类、原子累加器、Unsafe、线程池、JUC包下部分类、AQS等
+* 熟悉JVM内存结构、常见垃圾回收算法、垃圾回收器等
+* 熟练掌握基于spring cloud的微服务的搭建与开发，包括其组件Eureka、Nacos、Feign、Zuul网关、gateway网关、sentinel、Hystrix、seata等，熟悉Dubbo框架开发
+* 熟悉基于Redis、Zookeeper实现的分布式锁方案
+* 熟悉常用的缓存中间件Redis以及应用场景，对缓存问题以及缓存问题解决方案、持久化机制、集群、批处理优化、Redis数据结构、Redis RESP2.0通信协议、内存淘汰策略等有比较深的理解，曾经使用RESP2.0协议写了一个简易的Redis java客户端，熟悉j2cache的使用
+* 熟悉mongoDB的使用
+* 熟悉Linux常用命令
+* 熟悉使用ElasticSearch搜索中间件进行数据搜索，基本掌握Logstash和Kibana的使用，能使用elk做日志收集与展示
+* 熟悉RabbitMQ、RocketMQ消息中间件的使用，对RabbitMQ确保消息不丢失、消息堆积、幂等问题等有一定的了解
+* 熟悉容器化技术Docker的使用
+* 了解Zookeeper分布式协调框架的使用。
+* 掌握spring security安全框架的使用
+* 熟练使用IDEA、Git、Maven等开发工具、能使用Postman、knife4j swagger、jmeter等测试工具做接口测试
+* 熟悉HTML、CSS、JavaScript的使用、掌握vue、Axios和element UI组件库的基本使用
+* 有对接支付宝和微信第三方支付工具的经验
+
+
+
+
+
+
+
+<br>
+
+<br>
+
+<br>
+
+
+
+
+
 
 
 ## 项目
