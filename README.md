@@ -12,6 +12,7 @@ QQ：1296193245
 
 ## 学习笔记
 
+* **Nginx学习笔记**                         2023/04/27 - 2023/05/31 [点击进入](https://github.com/maomao124/Nginx_study_notes)
 * **Netty学习笔记**                         2023/03/04 - 2023/04/26 [点击进入](https://github.com/maomao124/netty_study_notes)
 * **布隆过滤器学习笔记**                 2023/02/27 - 2023/02/27 [点击进入](https://github.com/maomao124/bloomFilter_study_notes)
 * **聚合支付项目实战学习笔记**      2023/01/09 - 2023/02/09 [点击进入](https://github.com/maomao124/aggregate_pay_study_notes)
