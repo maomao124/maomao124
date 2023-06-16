@@ -12,7 +12,8 @@ QQ：1296193245
 
 ## 学习笔记
 
-* **Java报表技术学习笔记**            2023/06/01 -                       [点击进入](https://github.com/maomao124/java_report_study_notes)
+* **数据可视化学习笔记**                2023/06/10 - 2023/06/16 [点击进入](https://github.com/maomao124/data_visualization_study_notes)
+* **Java报表技术学习笔记**            2023/06/01 - 2023/06/08 [点击进入](https://github.com/maomao124/java_report_study_notes)
 * **Nginx学习笔记**                         2023/04/27 - 2023/05/31 [点击进入](https://github.com/maomao124/Nginx_study_notes)
 * **Netty学习笔记**                         2023/03/04 - 2023/04/26 [点击进入](https://github.com/maomao124/netty_study_notes)
 * **布隆过滤器学习笔记**                 2023/02/27 - 2023/02/27 [点击进入](https://github.com/maomao124/bloomFilter_study_notes)
@@ -82,6 +83,8 @@ QQ：1296193245
 * 有对接支付宝和微信第三方支付工具的经验
 * 掌握网络框架Netty的使用，掌握服务集群共享channel解决方案
 * 掌握Nginx的使用
+* 掌握java报表技术
+* 掌握数据可视化技术JFreechart、Highcharts和Echarts的使用
 
 
 
