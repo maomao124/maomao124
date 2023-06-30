@@ -12,6 +12,8 @@ QQ：1296193245
 
 ## 学习笔记
 
+* **TypeScript学习笔记**                2023/06/28 - 2023/06/29 [点击进入](https://github.com/maomao124/TypeScript_study_notes)
+* **Vue学习笔记**                             2023/06/18 -                       [点击进入](https://github.com/maomao124/vue_study_notes)
 * **数据可视化学习笔记**                2023/06/10 - 2023/06/16 [点击进入](https://github.com/maomao124/data_visualization_study_notes)
 * **Java报表技术学习笔记**            2023/06/01 - 2023/06/08 [点击进入](https://github.com/maomao124/java_report_study_notes)
 * **Nginx学习笔记**                         2023/04/27 - 2023/05/31 [点击进入](https://github.com/maomao124/Nginx_study_notes)
@@ -79,7 +81,7 @@ QQ：1296193245
 * 了解Zookeeper分布式协调框架的使用。
 * 掌握spring security安全框架的使用
 * 熟练使用IDEA、Git、Maven等开发工具、能使用Postman、knife4j swagger、jmeter等测试工具做接口测试
-* 熟悉HTML、CSS、JavaScript的使用、掌握vue、Axios和element UI组件库的基本使用
+* 熟悉HTML、CSS、JavaScript的使用、掌握Vue、TypeScript、和element UI的使用
 * 有对接支付宝和微信第三方支付工具的经验
 * 掌握网络框架Netty的使用，掌握服务集群共享channel解决方案
 * 掌握Nginx的使用
